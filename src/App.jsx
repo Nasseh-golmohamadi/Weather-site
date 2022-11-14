@@ -22,10 +22,10 @@ function App() {
   }
 
   return (
-    <>
+    <div className="parentOne">
       <FormSide handleButton={handleButton} />
       <Material apiValue={apiValue} setApiValue={setApiValue} />
-    </>
+    </div>
   );
 }
 

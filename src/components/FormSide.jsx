@@ -6,14 +6,15 @@ export default function FormSide({ handleButton }) {
   return (
     <div>
       <form>
-        <label htmlFor="City">Witch City:</label>
+        <h2>Write a City to Gain Weather Type:</h2>
         <input
+        className="input"
           type="text"
           id="City"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />
-        <button onClick={(e) => handleButton(e, inputValue)}>Search</button>
+        <button className="button" onClick={(e) => handleButton(e, inputValue)}>Search</button>
       </form>
     </div>
   );
